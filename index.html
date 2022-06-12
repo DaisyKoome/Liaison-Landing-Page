@@ -14,6 +14,7 @@
                 </div>
                 <form class="search">
                     <input type="search" name="" id="" placeholder="SEARCH">
+                    <span class="icon-search"></span>
                 </form>
             </div>
         </section>
@@ -21,33 +22,46 @@
             <div class="items">
                 <img src="images/logo.png" alt="" class="b-logo">
                 <ul class="menu-1">
-                    <li class="home">Home</li>
-                    <li class="biz">Our Business</li>
-                    <li class="news">News</li>
-                    <li class="res">Resource Centre</li>
+                    <li class="home">Home<span class="icon-cheveron-right"></span></li>
+                    <li class="biz">Our Business<span class="icon-cheveron-right"></span></li>
+                    <li class="news">News<span class="icon-cheveron-right"></span></li>
+                    <li class="res">Resource Centre<span class="icon-cheveron-right"></span></li>
                 </ul>
                 <p class="pipe">|</p>
                 <ul class="menu-2">
-                    <li class="about">About us</li>
-                    <li class="career">Careers</li>
-                    <li class="contact">Contact us</li>
+                    <li class="about">About us<span class="icon-cheveron-right"></span></li>
+                    <li class="career">Careers<span class="icon-cheveron-right"></span></li>
+                    <li class="contact">Contact us<span class="icon-cheveron-right"></span></li>
                 </ul>
+<!--                 <span class="icon-cheveron-left two"></span>                
+                <span class="icon-cheveron-right two"></span> -->
+                
             </div>
         </section>
         <section class="light-blue-mid">
             <div class="banner-blue-rec">
                 <p class="first-p">Leave your details below:</p>
-                <form class="first-row">
-                    <input type="text" name="name" id="name" class="name" placeholder="Name:">
-                    <input type="email" name="email" id="email" class="email" placeholder="Email:">
-                    <input type="tel" name="tel" id="tel" class="tel" placeholder="Telephone Number:">
-                </form>    
-                <form class="second-row">
-                    <input type="location" name="location" id="location" class="location" placeholder="Location/town:">
-                    <select name="product" id="product" form="second-row" class="product">
-                        <option value="volvo">Product</option>
-                    </select>
+                <form class="form">
+                    <div class="first-row">
+                        <input type="text" name="name" id="name" class="name" placeholder="Name:">
+                        <input type="email" name="email" id="email" class="email" placeholder="Email:">
+                        <input type="tel" name="tel" id="tel" class="tel" placeholder="Telephone Number:">
+                    </div>
+                    <div class="second-row">
+                        <select name="location" id="location" form="form" class="second-row location">
+                            <option value="location">Location/town</option>
+                        </select>
+                        <select name="product" id="product" form="form" class="second-row product">
+                            <option value="product">Product</option>
+                        </select>
+                    </div>
+                    <div class="submit-div">
+                        <button type="submit" class="submit">Get Started</button>
+                    </div>
                 </form>
+            </div>
+            <div class="ellipses-div">
+            <img src="images/liaison-ellipses.svg" width="980px" height="187px" class="ellipses">
             </div>
             <div class="half-cont">
                 <div class="half-cont1">
@@ -70,8 +84,15 @@
                 <br>
                 <p class="weekdays">Mon - Fri: 9am To 6pm</p>
                 </div>
-                <p class="copyright">Copyright Liaison Group 2022. All rights reserved.</p>
+                <p class="copyright">
+                    <span class="socials icon-twitter"></span>
+                    <span class="socials icon-facebook"></span>
+                    <span class="socials icon-instagram"></span>
+                    <br>
+                    Copyright Liaison Group 2022. All rights reserved.
+                </p>
             </footer>
+            
         </section>
     </body>
 </head>
